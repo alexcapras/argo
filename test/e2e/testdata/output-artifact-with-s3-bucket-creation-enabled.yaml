@@ -6,9 +6,9 @@ metadata:
   labels:
     argo-e2e: true
 spec:
-  entrypoint: output-artifact-with-s3-bucket-creation-enabled
+  entrypoint: main
   templates:
-    - name: output-artifact-with-s3-bucket-creation-enabled
+    - name: main
       steps:
         - - name: generate-artifact
             template: whalesay
@@ -27,8 +27,7 @@ spec:
               key: my-outputs/hello_world.txt.tgz
               endpoint: minio:9000
               insecure: true
-              createBucketIfNotPresent:
-                enabled: true
+              createBucketIfNotPresent: {}
               accessKeySecret:
                 name: my-minio-cred
                 key: accesskey

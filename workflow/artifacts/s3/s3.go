@@ -107,23 +107,15 @@ func (s3Driver *S3ArtifactDriver) Save(path string, outputArtifact *wfv1.Artifac
 			}
 
 			createBucketIfNotPresent := outputArtifact.S3.CreateBucketIfNotPresent
-			if createBucketIfNotPresent != nil && createBucketIfNotPresent.Enabled {
-				bucketExists, err := s3cli.BucketExists(outputArtifact.S3.Bucket)
+			if createBucketIfNotPresent != nil {
+				log.Infof("Bucket %s does not exist. Trying to create...", outputArtifact.S3.Bucket)
+				err = s3cli.MakeBucket(outputArtifact.S3.Bucket, minio.MakeBucketOptions{
+					Region:        outputArtifact.S3.Region,
+					ObjectLocking: outputArtifact.S3.CreateBucketIfNotPresent.ObjectLocking,
+				})
 				if err != nil {
-					log.Warnf("Failed to check if bucket exists: %v", outputArtifact.S3.Bucket)
-					return false, nil
-				}
-
-				if !bucketExists {
-					log.Infof("Bucket %s does not exist. Trying to create...", outputArtifact.S3.Bucket)
-					err = s3cli.MakeBucket(outputArtifact.S3.Bucket, minio.MakeBucketOptions{
-						Region:        outputArtifact.S3.CreateBucketIfNotPresent.Region,
-						ObjectLocking: outputArtifact.S3.CreateBucketIfNotPresent.ObjectLocking,
-					})
-					if err != nil {
-						log.Warnf("Failed to create bucket: %v", outputArtifact.S3.Bucket)
-						return false, err
-					}
+					log.Warnf("Failed to create bucket: %v", outputArtifact.S3.Bucket)
+					return false, err
 				}
 			}
 

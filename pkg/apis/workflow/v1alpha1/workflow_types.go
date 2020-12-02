@@ -1657,12 +1657,6 @@ type S3Bucket struct {
 
 // CreateS3BucketOptions options used to determine automatic automatic bucket-creation process
 type CreateS3BucketOptions struct {
-	// Enabled tells the driver whether to attempt to create the S3 bucket or not
-	Enabled bool `json:"enabled,omitempty" protobuf:"varint,1,opt,name=enabled"`
-
-	// Region Bucket location
-	Region string `json:"region,omitempty" protobuf:"varint,2,opt,name=region"`
-
 	// ObjectLocking Enable object locking
 	ObjectLocking bool `json:"objectLocking,omitempty" protobuf:"varint,3,opt,name=objectLocking"`
 }
