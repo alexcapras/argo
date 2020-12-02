@@ -3990,9 +3990,7 @@ CreateS3BucketOptions options used to determine automatic automatic bucket-creat
 ### Fields
 | Field Name | Field Type | Description   |
 |:----------:|:----------:|---------------|
-|`enabled`|`boolean`|Enabled tells the driver whether to attempt to create the S3 bucket or not|
 |`objectLocking`|`boolean`|ObjectLocking Enable object locking|
-|`region`|`string`|Region Bucket location|
 
 ## SuppliedValueFrom
 

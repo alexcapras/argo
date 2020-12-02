@@ -765,20 +765,6 @@ func schema_pkg_apis_workflow_v1alpha1_CreateS3BucketOptions(ref common.Referenc
 				Description: "CreateS3BucketOptions options used to determine automatic automatic bucket-creation process",
 				Type:        []string{"object"},
 				Properties: map[string]spec.Schema{
-					"enabled": {
-						SchemaProps: spec.SchemaProps{
-							Description: "Enabled tells the driver whether to attempt to create the S3 bucket or not",
-							Type:        []string{"boolean"},
-							Format:      "",
-						},
-					},
-					"region": {
-						SchemaProps: spec.SchemaProps{
-							Description: "Region Bucket location",
-							Type:        []string{"string"},
-							Format:      "",
-						},
-					},
 					"objectLocking": {
 						SchemaProps: spec.SchemaProps{
 							Description: "ObjectLocking Enable object locking",
