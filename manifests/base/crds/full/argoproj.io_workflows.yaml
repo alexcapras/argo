@@ -571,12 +571,8 @@ spec:
                             type: string
                           createBucketIfNotPresent:
                             properties:
-                              enabled:
-                                type: boolean
                               objectLocking:
                                 type: boolean
-                              region:
-                                type: string
                             type: object
                           endpoint:
                             type: string
@@ -1442,12 +1438,8 @@ spec:
                             type: string
                           createBucketIfNotPresent:
                             properties:
-                              enabled:
-                                type: boolean
                               objectLocking:
                                 type: boolean
-                              region:
-                                type: string
                             type: object
                           endpoint:
                             type: string
@@ -1751,12 +1743,8 @@ spec:
                                   type: string
                                 createBucketIfNotPresent:
                                   properties:
-                                    enabled:
-                                      type: boolean
                                     objectLocking:
                                       type: boolean
-                                    region:
-                                      type: string
                                   type: object
                                 endpoint:
                                   type: string
@@ -2649,12 +2637,8 @@ spec:
                                             type: string
                                           createBucketIfNotPresent:
                                             properties:
-                                              enabled:
-                                                type: boolean
                                               objectLocking:
                                                 type: boolean
-                                              region:
-                                                type: string
                                             type: object
                                           endpoint:
                                             type: string
@@ -3619,12 +3603,8 @@ spec:
                                   type: string
                                 createBucketIfNotPresent:
                                   properties:
-                                    enabled:
-                                      type: boolean
                                     objectLocking:
                                       type: boolean
-                                    region:
-                                      type: string
                                   type: object
                                 endpoint:
                                   type: string
@@ -4074,12 +4054,8 @@ spec:
                                   type: string
                                 createBucketIfNotPresent:
                                   properties:
-                                    enabled:
-                                      type: boolean
                                     objectLocking:
                                       type: boolean
-                                    region:
-                                      type: string
                                   type: object
                                 endpoint:
                                   type: string
@@ -7069,12 +7045,8 @@ spec:
                                   type: string
                                 createBucketIfNotPresent:
                                   properties:
-                                    enabled:
-                                      type: boolean
                                     objectLocking:
                                       type: boolean
-                                    region:
-                                      type: string
                                   type: object
                                 endpoint:
                                   type: string
@@ -7441,12 +7413,8 @@ spec:
                                   type: string
                                 createBucketIfNotPresent:
                                   properties:
-                                    enabled:
-                                      type: boolean
                                     objectLocking:
                                       type: boolean
-                                    region:
-                                      type: string
                                   type: object
                                 endpoint:
                                   type: string
@@ -7844,12 +7812,8 @@ spec:
                             type: string
                           createBucketIfNotPresent:
                             properties:
-                              enabled:
-                                type: boolean
                               objectLocking:
                                 type: boolean
-                              region:
-                                type: string
                             type: object
                           endpoint:
                             type: string
@@ -9043,12 +9007,8 @@ spec:
                             type: string
                           createBucketIfNotPresent:
                             properties:
-                              enabled:
-                                type: boolean
                               objectLocking:
                                 type: boolean
-                              region:
-                                type: string
                             type: object
                           endpoint:
                             type: string
@@ -9352,12 +9312,8 @@ spec:
                                   type: string
                                 createBucketIfNotPresent:
                                   properties:
-                                    enabled:
-                                      type: boolean
                                     objectLocking:
                                       type: boolean
-                                    region:
-                                      type: string
                                   type: object
                                 endpoint:
                                   type: string
@@ -10250,12 +10206,8 @@ spec:
                                             type: string
                                           createBucketIfNotPresent:
                                             properties:
-                                              enabled:
-                                                type: boolean
                                               objectLocking:
                                                 type: boolean
-                                              region:
-                                                type: string
                                             type: object
                                           endpoint:
                                             type: string
@@ -11220,12 +11172,8 @@ spec:
                                   type: string
                                 createBucketIfNotPresent:
                                   properties:
-                                    enabled:
-                                      type: boolean
                                     objectLocking:
                                       type: boolean
-                                    region:
-                                      type: string
                                   type: object
                                 endpoint:
                                   type: string
@@ -11675,12 +11623,8 @@ spec:
                                   type: string
                                 createBucketIfNotPresent:
                                   properties:
-                                    enabled:
-                                      type: boolean
                                     objectLocking:
                                       type: boolean
-                                    region:
-                                      type: string
                                   type: object
                                 endpoint:
                                   type: string
@@ -14139,12 +14083,8 @@ spec:
                                 type: string
                               createBucketIfNotPresent:
                                 properties:
-                                  enabled:
-                                    type: boolean
                                   objectLocking:
                                     type: boolean
-                                  region:
-                                    type: string
                                 type: object
                               endpoint:
                                 type: string
@@ -15010,12 +14950,8 @@ spec:
                                 type: string
                               createBucketIfNotPresent:
                                 properties:
-                                  enabled:
-                                    type: boolean
                                   objectLocking:
                                     type: boolean
-                                  region:
-                                    type: string
                                 type: object
                               endpoint:
                                 type: string
@@ -15319,12 +15255,8 @@ spec:
                                       type: string
                                     createBucketIfNotPresent:
                                       properties:
-                                        enabled:
-                                          type: boolean
                                         objectLocking:
                                           type: boolean
-                                        region:
-                                          type: string
                                       type: object
                                     endpoint:
                                       type: string
@@ -16217,12 +16149,8 @@ spec:
                                                 type: string
                                               createBucketIfNotPresent:
                                                 properties:
-                                                  enabled:
-                                                    type: boolean
                                                   objectLocking:
                                                     type: boolean
-                                                  region:
-                                                    type: string
                                                 type: object
                                               endpoint:
                                                 type: string
@@ -17187,12 +17115,8 @@ spec:
                                       type: string
                                     createBucketIfNotPresent:
                                       properties:
-                                        enabled:
-                                          type: boolean
                                         objectLocking:
                                           type: boolean
-                                        region:
-                                          type: string
                                       type: object
                                     endpoint:
                                       type: string
@@ -17642,12 +17566,8 @@ spec:
                                       type: string
                                     createBucketIfNotPresent:
                                       properties:
-                                        enabled:
-                                          type: boolean
                                         objectLocking:
                                           type: boolean
-                                        region:
-                                          type: string
                                       type: object
                                     endpoint:
                                       type: string

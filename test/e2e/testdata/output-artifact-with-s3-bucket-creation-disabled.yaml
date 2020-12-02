@@ -4,16 +4,16 @@ kind: Workflow
 metadata:
   generateName: output-artifact-with-s3-bucket-creation-disabled-
 spec:
-  entrypoint: output-artifact-with-s3-bucket-creation-disabled
+  entrypoint: main
   templates:
-    - name: output-artifact-with-s3-bucket-creation-disabled
+    - name: main
       steps:
         - - name: generate-artifact
             template: whalesay
 
     - name: whalesay
       container:
-        image: argoproj/argosay:v1
+        image: argoproj/argosay:v2
         command: [sh, -c]
         args: ["sleep 1; cowsay hello world | tee /tmp/hello_world.txt"]
       outputs:
@@ -25,8 +25,7 @@ spec:
               key: my-outputs/hello_world.txt.tgz
               endpoint: minio:9000
               insecure: true
-              createBucketIfNotPresent:
-                enabled: false
+              createBucketIfNotPresent: {}
               accessKeySecret:
                 name: my-minio-cred
                 key: accesskey
